@@ -1,0 +1,163 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#namePreview {
+    min-height: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.mood-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.mood-buttons button:hover {
+    opacity: 0.9;
+}
+
+#happyBtn {
+    background-color: #28a745;
+}
+
+#stressedBtn {
+    background-color: #dc3545;
+}
+
+#chillBtn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+#analysisText {
+    margin-top: 20px;
+    color: #777;
+    min-height: 20px;
+}
+
+.stoplight-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traffic-light {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #555;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.red.glow {
+    background-color: red;
+    box-shadow: 0 0 20px 5px red;
+}
+
+.yellow.glow {
+    background-color: yellow;
+    box-shadow: 0 0 20px 5px yellow;
+}
+
+.green.glow {
+    background-color: limegreen;
+    box-shadow: 0 0 20px 5px limegreen;
+}
+
+#greeting {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+#suggestion {
+    font-size: 14px;
+    color: #777;
+}
+
+.happy-bg {
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+}
+
+.stressed-bg {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.chill-bg {
+    background: linear-gradient(135deg, #ffdd00, #fbb034);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .mood-buttons button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .light {
+        width: 50px;
+        height: 50px;
+    }
+    #greeting {
+        font-size: 20px;
+    }
+}
